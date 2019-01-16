@@ -62,7 +62,7 @@ if __name__ == '__main__':
     conn = pymysql.connect(
             host="127.0.0.1",
             user="root",
-            password="mc940520",
+            password="123456",
             db="lagou_jobs",
             port=3306,
             charset="utf8"
