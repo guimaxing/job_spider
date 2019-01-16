@@ -1,0 +1,39 @@
+#拉钩招聘信息存储表
+CREATE TABLE `jobs_salary` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id',
+  `company` varchar(255) DEFAULT NULL COMMENT '公司名称',
+  `company_url` varchar(255) DEFAULT NULL COMMENT '公司链接',
+  `eduLevel` varchar(20) DEFAULT NULL COMMENT '教育程度',
+  `job` varchar(50) DEFAULT NULL COMMENT '工作名称',
+  `job_url` varchar(200) DEFAULT NULL COMMENT '招聘链接',
+  `location` varchar(200) DEFAULT NULL COMMENT '地址',
+  `salary` varchar(20) DEFAULT NULL COMMENT '工资',
+  `workingExp` varchar(10) DEFAULT NULL COMMENT '工作经验',
+  `city_code` varchar(50) DEFAULT NULL COMMENT '城市编号',
+  `produce` varchar(20) DEFAULT NULL COMMENT '发布时间',
+  `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5345 DEFAULT CHARSET=utf8;
+
+
+
+#智联招聘信息存储表
+CREATE TABLE `jobs_salary` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id',
+  `company` varchar(255) DEFAULT NULL COMMENT '公司名称',
+  `size` varchar(20) DEFAULT NULL COMMENT '规模',
+  `type_` varchar(10) DEFAULT NULL COMMENT '性质',
+  `company_url` varchar(255) DEFAULT NULL COMMENT '公司链接',
+  `eduLevel` varchar(20) DEFAULT NULL COMMENT '教育程度',
+  `emplType` varchar(20) DEFAULT NULL COMMENT '职业类型',
+  `jobName` varchar(50) DEFAULT NULL COMMENT '工作名称',
+  `jobTag` varchar(200) DEFAULT NULL COMMENT '福利',
+  `jobType` varchar(200) DEFAULT NULL COMMENT '方向',
+  `positionURL` varchar(200) DEFAULT NULL COMMENT '招聘链接',
+  `rate` varchar(10) DEFAULT NULL COMMENT '反馈率',
+  `salary` varchar(20) DEFAULT NULL COMMENT '工资',
+  `workingExp` varchar(10) DEFAULT NULL COMMENT '工作经验',
+  `city_code` varchar(10) DEFAULT NULL COMMENT '城市编号',
+  `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4321 DEFAULT CHARSET=utf8;
